@@ -25,11 +25,15 @@ pip install -r requirements.txt
 TOKEN=fa9dac58dbced9a28458e2e409fnk0038a6e83ef
 ```
 * Run the script in a terminal
-```console
-python3 bitlinks.py link
+```bash
+python3 bitlinks.py https://www.litres.ru
+Битлинк  bit.ly/3gab7Vb
+python3 bitlinks.py https://bit.ly/3gab7Vb
+Всего кликов  1
 ```
 ### Example
 
+![For example](https://postimg.cc/pykZjywY)​
 
 ### Project Goals
 

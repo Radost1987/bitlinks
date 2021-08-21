@@ -48,15 +48,15 @@ if __name__ == '__main__':
     load_dotenv()
     bitly_token = os.getenv('TOKEN')
     parser = argparse.ArgumentParser()
-    parser.add_argument('link')
-    args = parser.parse_args()
-    link_is_bitlink = is_bitlink(bitly_token, args.link)
+    parser.add_argument('link', help='Input url')
+    linkspace = parser.parse_args()
+    link_is_bitlink = is_bitlink(bitly_token, linkspace.link)
     try:
         if link_is_bitlink:
-            clicks_count = count_clicks(bitly_token, args.link)
+            clicks_count = count_clicks(bitly_token, linkspace.link)
             print('Всего кликов ', clicks_count)
         else:
-            bitlink = shorten_link(bitly_token, args.link)
+            bitlink = shorten_link(bitly_token, linkspace.link)
             print('Битлинк ', bitlink)
     except requests.exceptions.HTTPError:
         print('Введена неработающая ссылка')
