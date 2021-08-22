@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 * Generate your [access token](https://app.bitly.com/Bl8f4PtdN5s/bitlinks/3zfABbf?actions=accountMain&actions=profile&actions=accessToken). Put it in file `.env` to folder with script like this:
 ```
-TOKEN=fa9dac58dbced9a28458e2e409fnk0038a6e83ef
+BITLY_TOKEN=fa9dac58dbced9a28458e2e409fnk0038a6e83ef
 ```
 * Run the script in a terminal
 ```
