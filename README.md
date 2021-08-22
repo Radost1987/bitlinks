@@ -1,4 +1,4 @@
-# Bitly url shorterer
+# Bitly url shortener
 
 This code creates shortlink from your long url or counts clicks to your shortlink using [https://app.bitly.com](https://app.bitly.com).
 
@@ -37,4 +37,4 @@ python3 bitlinks.py https://bit.ly/3gab7Vb
 
 ### Project Goals
 
-The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).#
+The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).
